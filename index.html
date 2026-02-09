@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Pick Our Concert</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="container">
+    <h1>I have a concert gift for you</h1>
+    <p>Pick the show you want. I’ll take care of the rest.</p>
+
+    <div class="grid">
+      <div class="card" onclick="selectArtist('Morgan Wallen')">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Morgan_Wallen_2023.jpg">
+        <h3>Morgan Wallen</h3>
+        <span>April 10–11, 2026 · Minneapolis</span>
+      </div>
+
+      <div class="card" onclick="selectArtist('Luke Combs')">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/0/0e/Luke_Combs_2022.jpg">
+        <h3>Luke Combs</h3>
+        <span>2026 · Midwest dates expected</span>
+      </div>
+
+      <div class="card" onclick="selectArtist('Noah Kahan')">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Noah_Kahan_2023.jpg">
+        <h3>Noah Kahan</h3>
+        <span>Aug 5, 2026 · Target Field</span>
+      </div>
+
+      <div class="card" onclick="selectArtist('Chris Stapleton')">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/67/Chris_Stapleton_2019.jpg">
+        <h3>Chris Stapleton</h3>
+        <span>2026 · Touring (TBA)</span>
+      </div>
+
+      <div class="card" onclick="selectArtist('Jon Pardi')">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/3/3b/Jon_Pardi_2022.jpg">
+        <h3>Jon Pardi</h3>
+        <span>July 17, 2026 · Hinckley, MN</span>
+      </div>
+
+      <div class="card" onclick="selectArtist('Forrest Frank')">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/2/2c/Forrest_Frank_2023.jpg">
+        <h3>Forrest Frank</h3>
+        <span>July 23, 2026 · Target Center</span>
+      </div>
+    </div>
+
+    <p id="result"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
