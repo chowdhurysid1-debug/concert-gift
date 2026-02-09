@@ -9,10 +9,10 @@
 <body>
 
   <div class="container">
-    <h1>I have a concert gift for you</h1>
+    <h1>Genevieve, I have a concert gift for you</h1>
     <p class="subtitle">Pick the show you want. I’ll take care of the rest.</p>
 
-    <div class="grid">
+    <div class="grid" id="cards">
       <div class="card" onclick="selectArtist('Morgan Wallen')">
         <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=900&q=80">
         <h3>Morgan Wallen</h3>
@@ -50,9 +50,15 @@
       </div>
     </div>
 
-    <div id="result"></div>
+    <div id="result" class="hidden">
+      <h2 id="chosenText"></h2>
+      <p>I can’t wait to take you ❤️</p>
+      <button onclick="resetChoice()">Change my mind</button>
+    </div>
   </div>
 
+  <canvas id="confetti"></canvas>
   <script src="script.js"></script>
 </body>
 </html>
+
