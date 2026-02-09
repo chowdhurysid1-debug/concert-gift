@@ -8,52 +8,70 @@
 </head>
 <body>
 
+  <div class="bg"></div>
+
   <div class="container">
     <h1>Genevieve, I have a concert gift for you</h1>
-    <p class="subtitle">Pick the show you want. I’ll take care of the rest.</p>
+    <p class="subtitle">
+      Pick the show you want. I’ll take care of the rest.
+    </p>
 
-    <div class="grid" id="cards">
+    <div class="carousel" id="cards">
+
       <div class="card" onclick="selectArtist('Morgan Wallen')">
-        <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=900&q=80">
-        <h3>Morgan Wallen</h3>
-        <span>April 10–11, 2026 · Minneapolis</span>
+        <img src="morgan-wallen.jpg" alt="Morgan Wallen">
+        <div class="card-text">
+          <h3>Morgan Wallen</h3>
+          <span>April 10–11, 2026 · Minneapolis</span>
+        </div>
       </div>
 
       <div class="card" onclick="selectArtist('Luke Combs')">
-        <img src="https://images.unsplash.com/photo-1507874457470-272b3c8d8ee2?auto=format&fit=crop&w=900&q=80">
-        <h3>Luke Combs</h3>
-        <span>2026 · Midwest dates expected</span>
+        <img src="luke-combs.jpg" alt="Luke Combs">
+        <div class="card-text">
+          <h3>Luke Combs</h3>
+          <span>2026 · Midwest dates expected</span>
+        </div>
       </div>
 
       <div class="card" onclick="selectArtist('Noah Kahan')">
-        <img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?auto=format&fit=crop&w=900&q=80">
-        <h3>Noah Kahan</h3>
-        <span>Aug 5, 2026 · Target Field</span>
+        <img src="noah-kahan.jpg" alt="Noah Kahan">
+        <div class="card-text">
+          <h3>Noah Kahan</h3>
+          <span>Aug 5, 2026 · Target Field</span>
+        </div>
       </div>
 
       <div class="card" onclick="selectArtist('Chris Stapleton')">
-        <img src="https://images.unsplash.com/photo-1518972559570-7cc1309f3229?auto=format&fit=crop&w=900&q=80">
-        <h3>Chris Stapleton</h3>
-        <span>2026 · Touring (TBA)</span>
+        <img src="chris-stapleton.jpg" alt="Chris Stapleton">
+        <div class="card-text">
+          <h3>Chris Stapleton</h3>
+          <span>2026 · Touring (TBA)</span>
+        </div>
       </div>
 
       <div class="card" onclick="selectArtist('Jon Pardi')">
-        <img src="https://images.unsplash.com/photo-1506157786151-b8491531f063?auto=format&fit=crop&w=900&q=80">
-        <h3>Jon Pardi</h3>
-        <span>July 17, 2026 · Hinckley, MN</span>
+        <img src="jon-pardi.jpg" alt="Jon Pardi">
+        <div class="card-text">
+          <h3>Jon Pardi</h3>
+          <span>July 17, 2026 · Hinckley, MN</span>
+        </div>
       </div>
 
       <div class="card" onclick="selectArtist('Forrest Frank')">
-        <img src="https://images.unsplash.com/photo-1515165562835-c4c7b52d8b8b?auto=format&fit=crop&w=900&q=80">
-        <h3>Forrest Frank</h3>
-        <span>July 23, 2026 · Target Center</span>
+        <img src="forrest-frank.jpg" alt="Forrest Frank">
+        <div class="card-text">
+          <h3>Forrest Frank</h3>
+          <span>July 23, 2026 · Target Center</span>
+        </div>
       </div>
+
     </div>
 
     <div id="result" class="hidden">
       <h2 id="chosenText"></h2>
-      <p>I can’t wait to take you ❤️</p>
-      <button onclick="resetChoice()">Change my mind</button>
+      <p>This one’s going to be special ❤️</p>
+      <button onclick="resetChoice()">Pick again</button>
     </div>
   </div>
 
@@ -61,4 +79,3 @@
   <script src="script.js"></script>
 </body>
 </html>
-
